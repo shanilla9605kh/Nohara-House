@@ -2,10 +2,16 @@
 #include<conio.h>
 #include<graphics.h>
 #include<dos.h>
+
 void main()
 { int gd=DETECT,gmode;
   initgraph(&gd,&gmode,"C:\\TURBOC3\\BGI");
-
+  line(1,1,1,getmaxy());
+  line(getmaxx(),1,getmaxx(),getmaxy());
+  line(1,440,getmaxx(),440);
+  line(1,1,getmaxx(),1);
+ 
+ 
   //vertical
   line(1,355,40,355);
   line(40,350,40,440);
